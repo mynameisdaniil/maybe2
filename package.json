@@ -12,7 +12,7 @@
     "monad"
   ],
   "author": "Daniil Sobol",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "dependencies": {
     "type-of-is": "~3.2.0"
   },
