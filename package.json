@@ -1,8 +1,8 @@
 {
   "name": "maybe2",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yet another JS implementation of maybe monad",
-  "repository":"git@github.com:mynameisdaniil/maybe2.git",
+  "repository": "git@github.com:mynameisdaniil/maybe2.git",
   "main": "index.js",
   "scripts": {
     "test": "make test"
@@ -17,6 +17,6 @@
     "type-of-is": "~3.2.0"
   },
   "devDependencies": {
-    "nodeunit":"0.8.1"
+    "nodeunit": "0.8.1"
   }
 }
