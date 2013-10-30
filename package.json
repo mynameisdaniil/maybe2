@@ -1,6 +1,6 @@
 {
   "name": "maybe2",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Yet another JS implementation of maybe monad",
   "repository": "git@github.com:mynameisdaniil/maybe2.git",
   "main": "index.js",
