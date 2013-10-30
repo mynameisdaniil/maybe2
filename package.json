@@ -14,5 +14,8 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "type-of-is": "~3.2.0"
+  },
+  "devDependencies": {
+    "nodeunit":"0.8.1"
   }
 }
