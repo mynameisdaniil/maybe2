@@ -5,7 +5,10 @@ MODULES = ./node_modules/
 default: test
 
 test:
-	$(NODE) test.js
+	$(NODE) ./test.js
+
+examples:
+	$(NODE) ./examples.js
 
 install:
 	rm -rf $(MODULES)
