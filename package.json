@@ -1,0 +1,18 @@
+{
+  "name": "maybe2",
+  "version": "0.0.0",
+  "description": "Yet another JS implementation of maybe monad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "maybe",
+    "monad"
+  ],
+  "author": "Daniil Sobol",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "type-of-is": "~3.2.0"
+  }
+}
