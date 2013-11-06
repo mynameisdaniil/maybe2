@@ -11,17 +11,20 @@ log('and... empty string treated as empty? ', maybe('').isEmpty())
 
 
 log(line);
-var definitelyUndefined;
-log('Now, let\'s try to get something out of undefined variable: ', maybe(definitelyUndefined).getOrElse('default value'));
+var definitelyUndefined = 0;
+log('Now, let\'s try to get something out of undefined variable: ',
+    maybe(definitelyUndefined).getOrElse('OLOLO'));
 
 
 log(line);
 var definitelyUndefined;
 var i = 0;
-log('Let\'s try to map function to numeric 0: ', maybe(i).map(function() { return 100500; }).getOrElse('Never get this value'));
-log('Original value still untouched: ', i);
+log('Let\'s try to map function to numeric 0: ',
+    maybe(i).map(function(i) { return 100500; }).getOrElse('Never get this value'));
+// log('Original value still untouched: ', i);
 log('\n');
-log('And now will map to undefined varible: ', maybe(definitelyUndefined).map(function() { return 42; }).getOrElse('The answer was 42'));
+log('And now will map to undefined varible: ',
+    maybe(definitelyUndefined).map(function() { return 42; }).getOrElse('The answer was 42'));
 
 
 log(line);
@@ -34,10 +37,11 @@ log('is myInstance really instance of MyClass?', maybe(myInstance).is(MyClass).n
 
 
 log(line);
-var numeric = 42;
+var greaterThan = function (num) { return function (x) { return x > num ? x:null; }; };
+var lessThan = function (num) { return function (x) { return x < num ? x:null; }; };
 var definitelyUndefined;
-log('All together: ', maybe(numeric)
+log('All together: ', maybe(definitelyUndefined)
                         .is(Number)
-                        .map(function(n) { return n < 9000 ? n:null; })
-                        .map(function(n) { return n > 0 ? n:null; })
-                        .getOrElse(100500));
+                        .map(greaterThan(0))
+                        .map(lessThan(42))
+                        .getOrElse(9000));
