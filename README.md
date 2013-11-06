@@ -10,3 +10,4 @@ log('All together: ', maybe(definitelyUndefined)
                         .getOrElse(9000));
 ```
 Take a look at the example.js or test.js for more info.
+(All glory goes to @andyhd)
