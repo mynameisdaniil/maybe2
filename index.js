@@ -1,7 +1,7 @@
 var Type = require('type-of-is');
 
 module.exports = function maybe(value) {
-  function isEmpty() { return value === undefined || value === null; }
+  function isEmpty() { return value === undefined || value === null || isNaN(value); }
   function nonEmpty() { return !isEmpty(); }
   function is(type) { return Type.is(value, type); }
   var obj = {
